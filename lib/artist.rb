@@ -1,9 +1,10 @@
 require 'pry'
-require_relative '../lib/concerns/memorable'
+require_relative '../config/environment'
 
 
 class Artist
   extend Memorable
+  include Paramable
   attr_accessor :name
   attr_reader :songs
   @@artists = []
