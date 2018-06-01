@@ -5,6 +5,7 @@ require_relative '../lib/concerns/paramable'
 
 
 class Song
+  extend Findable
   extend Memorable::ClassMethods
   extend Memorable::InstanceMethods
   include Paramable
