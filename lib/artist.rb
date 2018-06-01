@@ -1,5 +1,5 @@
 require 'pry'
-require 'config/environment.rb'
+require_relative '../config/environment'
 
 
 class Artist
