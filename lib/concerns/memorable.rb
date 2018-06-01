@@ -11,7 +11,8 @@ module Memorable
 
   module InstanceMethods
     def initialize
-      self.all << self
+      binding.pry
+      self.class.all << self
     end
   end
 end
